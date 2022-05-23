@@ -12,7 +12,7 @@ function compareTrue(gato, cachorro) {
 // Desafio 2
 function calcArea(base, height) {
   // seu código aqui
-  let area = (base * height) / 2 
+  let area = (base * height) / 2;
   return area
 }
 
@@ -23,8 +23,9 @@ function splitSentence(text) {
 }
 
 // Desafio 4
-function concatName() {
+function concatName(array) {
   // seu código aqui
+  return array[array.length - 1] + ", " + array[0]
 }
 
 // Desafio 5
