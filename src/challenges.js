@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(gato, cachorro) {
-  if (gato === true && cachorro === true){
+  if (gato === true && cachorro === true) {
     return true
   }
   else {
@@ -33,22 +33,29 @@ function footballPoints(wins, ties) {
 function highestCount(array) {
   let numeroMaior = array[0]
   let contagem = 0
-  for (let index = 0; index < array.length; index += 1){
+  for (let index = 0; index < array.length; index += 1) {
     if (array[index] > numeroMaior) {
       numeroMaior = array[index];
-      contagem = 0; 
+      contagem = 0;
     }
     if (array[index] === numeroMaior)
-    contagem += 1
+      contagem += 1
   }
   return contagem
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  if (Math.abs(mouse - cat1) > Math.abs(mouse - cat2)) {
+    return 'cat2'
+  }
+  if (Math.abs(mouse - cat1) === Math.abs(mouse - cat2)) {
+    return 'os gatos trombam e o rato foge'
+  }
+  else {
+    return 'cat1'
+  }
 }
-
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
